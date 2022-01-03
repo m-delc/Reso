@@ -1,0 +1,52 @@
+{
+  "Resos": [
+    {
+      "Id": "32973248",
+      "GuestName": "Tam",
+      "Restaurant": "The Stake",
+      "Date": "2022/01/29",
+      "Time": "7:30",
+      "PartySize": "2"
+    },
+    {
+      "Id": "09390823",
+      "GuestName": "Kip",
+      "Restaurant": "Grits All Day",
+      "Date": "2022/01/28",
+      "Time": "8:00",
+      "PartySize": "3"
+    },
+    {
+      "Id": "905490345",
+      "GuestName": "Eloise",
+      "Restaurant": "La Cucina",
+      "Date": "2022/01/27",
+      "Time": "6:30",
+      "PartySize": "4"
+    },
+    {
+      "Id": "093742398",
+      "GuestName": "Sarin",
+      "Restaurant": "Stew You",
+      "Date": "2022/01/28",
+      "Time": "9:00",
+      "PartySize": "2"
+    },
+    {
+      "Id": "264873874",
+      "GuestName": "Biff",
+      "Restaurant": "Fried 'N' Tied",
+      "Date": "2022/01/29",
+      "Time": "9:00",
+      "PartySize": "4"
+    },
+    {
+      "Id": "6473839227",
+      "GuestName": "Rosalia",
+      "Restaurant": "Brine",
+      "Date": "2022/01/27",
+      "Time": "8:30",
+      "PartySize": "2"
+    }
+  ]
+}
