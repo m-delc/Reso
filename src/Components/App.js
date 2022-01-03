@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import logo from '../logo.svg';
 import '../App.css';
 import { v4 } from 'uuid'
+import Form from './Form'
+import { Link } from "react-router-dom";
+
 
 function App() {
 
@@ -23,30 +26,22 @@ function App() {
   console.log(data);
 
   // template for adding new reservation to db.json
-  const newObj = {
-    "Id": v4(),
-    "GuestName": ,
-    "Restaurant": ,
-    "Date": ,
-    "Time": ,
-    "PartySize": 
-  }
+  // const newObj = {
+  //   "Id": v4(),
+  //   "GuestName":
+  //   "Restaurant":
+  //   "Date":
+  //   "Time":
+  //   "PartySize":
+  // }
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />``
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={logo} className="App-logo" alt="logo" />
+        <nav>
+          <Link to="./Form">Form Test</Link>
+        </nav>
       </header>
     </div>
   );
