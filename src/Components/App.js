@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../logo.svg';
 import '../App.css';
-import { v4 } from 'uuid'
-import Form from './Form'
 import { Link } from "react-router-dom";
+import DropdownFrontPage from './DropdownFrontPage'
+// import DataMap from './DataMap'
+// import { v4 } from 'uuid'
+
 
 
 function App() {
@@ -35,15 +36,21 @@ function App() {
   //   "PartySize":
   // }
 
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <nav>
-          <Link to="./Form">Form Test</Link>
-          <p>
-          <Link to="./ConfirmReservation">Conform Reso (Link Test)</Link>
-          </p>
-        </nav>
+        <DropdownFrontPage />
+        {/* <DataMap data={data} /> */}
+          <nav>
+            <p>
+              <Link to="./Form">Form Test</Link>
+            </p>
+            <p>
+              <Link to="./ConfirmReservation">Conform Reso (Link Test)</Link>
+            </p>
+          </nav>
       </header>
     </div>
   );
