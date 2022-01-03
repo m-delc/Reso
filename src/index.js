@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './Components/App';
 import Form from './Components/Form'
+import ConfirmReservation from './Components/ConfirmReservation'
 import reportWebVitals from './reportWebVitals';
 import { render } from "react-dom"
 import { BrowserRouter, 
@@ -24,6 +25,7 @@ render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="Form" element={<Form />} />
+      <Route path="ConfirmReservation" element={<ConfirmReservation />} />
     </Routes>
   </BrowserRouter>, 
   rootElement
