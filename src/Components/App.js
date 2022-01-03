@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../logo.svg';
 import '../App.css';
+import { v4 } from 'uuid'
 
 function App() {
 
@@ -21,14 +22,15 @@ function App() {
 
   console.log(data);
 
-  // const newObj = {
-  //   "Id": "",
-  //   "GuestName": "",
-  //   "Restaurant": "",
-  //   "Date": "",
-  //   "Time": "",
-  //   "PartySize": ""
-  // }
+  // template for adding new reservation to db.json
+  const newObj = {
+    "Id": v4(),
+    "GuestName": ,
+    "Restaurant": ,
+    "Date": ,
+    "Time": ,
+    "PartySize": 
+  }
 
   return (
     <div className="App">
