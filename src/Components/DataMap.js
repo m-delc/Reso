@@ -1,21 +1,27 @@
 import React from 'react';
-// import App from './App'
-import DropdownFrontPage from './DropdownFrontPage';
+// import DropdownFrontPage from './DropdownFrontPage';
+import SelectAutoWidth from './SelectAutoWidth';
+
 
 function DataMap ({ data }) {
 
-    console.log(data);
+
     return (
         <div>
             {
-                data.map(d => (
-                    <DropdownFrontPage key={d.id}
-                                        restaurant={d.restaurant} />
+                data.map(d => ( 
+                                
+                    <SelectAutoWidth key={d.id}
+                                        restaurant={d.restaurant}
+                                        time={d.time} 
+                                        />
+                                
                 ))
             }
         </div>
     )
 
 }
+
 
 export default DataMap

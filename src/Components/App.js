@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import { Link } from "react-router-dom";
-import DropdownFrontPage from './DropdownFrontPage'
+// import DropdownFrontPage from './DropdownFrontPage'
 import DataMap from './DataMap'
-import FloatingActionButtonSize from './FloatingActionButtonSize'
+import Button from '@material-ui/core/Button';
+import SelectAutoWidth from './SelectAutoWidth'
+
 // import { v4 } from 'uuid'
 
 
@@ -12,6 +14,7 @@ function App() {
 
   // state for JSON
   const [data, setData] = useState([])
+
 
   // fetch function
   const fetchData = async () =>  {
@@ -38,13 +41,20 @@ function App() {
   // }
 
 
-
   return (
     <div className="App">
       <header className="App-header">
-        <FloatingActionButtonSize />
-        <DropdownFrontPage />
+
+        <Button 
+          component={Link} to="./Form"
+          variant="contained"
+          color="secondary"
+          >
+          CLICK
+        </Button>
         <DataMap data={data} />
+        {/* <DropdownFrontPage /> */}
+        {/* <SelectAutoWidth /> */}
           <nav>
             <p>
               <Link to="./Form">Form Test</Link>

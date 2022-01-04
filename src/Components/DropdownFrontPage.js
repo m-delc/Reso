@@ -1,29 +1,34 @@
-import React from 'react';
-// import App from './App'
+// import React from 'react';
+// // import InputLabel from '@mui/material/InputLabel';
+// // import MenuItem from '@mui/material/MenuItem';
+// // import FormControl from '@mui/material/FormControl';
+// // import Select from '@mui/material/Select';
+
+// function DropdownFrontPage({ time, restaurant }) {
 
 
-function DropdownFrontPage({ restaurant }) {
 
-    // // state to toggle the dropdown menu on/off
-    // const [isOpen, setIsOpen] = useState(false);
-    // // state for storing selection from dropdown
-    // const [selectedOption, setSelectedOption] = useState(null)
-
-    console.log(restaurant);
+//     // console.log(restaurant, time);
     
     
-    return (
+//     return (
+//          <div>
 
-            <div>
+
+//             {/* <div>
+//                 <label>Select Time:</label>
+//             </div>
+//             <div>
+//                 <select>
+                    
+//                 </select>
+//             </div> */}
                 
-                {/* <label>Where do ya wanna eat?</label> */}
-                    <ul name="restaurants">
-                        <li value={restaurant}>{restaurant}</li>
-                    </ul>
-
-            </div>
-    )
-}
 
 
-export default DropdownFrontPage
+//         </div>
+//     )
+// }
+
+
+// export default DropdownFrontPage
