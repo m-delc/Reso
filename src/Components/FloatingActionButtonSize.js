@@ -15,6 +15,6 @@ export default function FloatingActionButtonSize() {
       <Fab color="secondary" aria-label="add">
         <AddIcon />
       </Fab>
-    </Box>
+    </Box>  
   );
 }
