@@ -1,52 +1,52 @@
 {
-  "Resos": [
+  "resos": [
     {
-      "Id": "32973248",
-      "GuestName": "Tam",
-      "Restaurant": "The Stake",
-      "Date": "2022/01/29",
-      "Time": "7:30",
-      "PartySize": "2"
+      "id": "32973248",
+      "guestname": "Tam",
+      "restaurant": "The Stake",
+      "date": "2022/01/29",
+      "time": "7:30",
+      "partysize": "2"
     },
     {
-      "Id": "09390823",
-      "GuestName": "Kip",
-      "Restaurant": "Grits All Day",
-      "Date": "2022/01/28",
-      "Time": "8:00",
-      "PartySize": "3"
+      "id": "09390823",
+      "guestname": "Kip",
+      "restaurant": "Grits All Day",
+      "date": "2022/01/28",
+      "time": "8:00",
+      "partysize": "3"
     },
     {
-      "Id": "905490345",
-      "GuestName": "Eloise",
-      "Restaurant": "La Cucina",
-      "Date": "2022/01/27",
-      "Time": "6:30",
-      "PartySize": "4"
+      "id": "905490345",
+      "guestname": "Eloise",
+      "restaurant": "La Cucina",
+      "date": "2022/01/27",
+      "time": "6:30",
+      "partysize": "4"
     },
     {
-      "Id": "093742398",
-      "GuestName": "Sarin",
-      "Restaurant": "Stew You",
-      "Date": "2022/01/28",
-      "Time": "9:00",
-      "PartySize": "2"
+      "id": "093742398",
+      "guestname": "Sarin",
+      "restaurant": "Stew You",
+      "date": "2022/01/28",
+      "time": "9:00",
+      "partysize": "2"
     },
     {
-      "Id": "264873874",
-      "GuestName": "Biff",
-      "Restaurant": "Fried 'N' Tied",
-      "Date": "2022/01/29",
-      "Time": "9:00",
-      "PartySize": "4"
+      "id": "264873874",
+      "guestname": "Biff",
+      "restaurant": "Fried 'N' Tied",
+      "date": "2022/01/29",
+      "time": "9:00",
+      "partysize": "4"
     },
     {
-      "Id": "6473839227",
-      "GuestName": "Rosalia",
-      "Restaurant": "Brine",
-      "Date": "2022/01/27",
-      "Time": "8:30",
-      "PartySize": "2"
+      "id": "6473839227",
+      "guestname": "Rosalia",
+      "restaurant": "Brine",
+      "date": "2022/01/27",
+      "time": "8:30",
+      "partysize": "2"
     }
   ]
 }

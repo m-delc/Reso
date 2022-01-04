@@ -3,6 +3,7 @@ import '../App.css';
 import { Link } from "react-router-dom";
 import DropdownFrontPage from './DropdownFrontPage'
 import DataMap from './DataMap'
+import FloatingActionButtonSize from './FloatingActionButtonSize'
 // import { v4 } from 'uuid'
 
 
@@ -24,7 +25,7 @@ function App() {
     fetchData();
   }, [])
 
-  // console.log(data);
+  console.log(data);
 
   // template for adding new reservation to db.json
   // const newObj = {
@@ -41,6 +42,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <FloatingActionButtonSize />
         <DropdownFrontPage />
         <DataMap data={data} />
           <nav>
