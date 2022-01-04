@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import './index.css';
 import App from './Components/App';
 import Form from './Components/Form'
@@ -27,7 +27,7 @@ render(
       <Route path="/" element={<App />} />
       <Route path="Form" element={<Form />} />
       <Route path="ConfirmReservation" element={<ConfirmReservation />} />
-      <Route path="DataMap" element={<DataMap />} />
+      <Route path="/DataMap" element={<DataMap />} />
     </Routes>
   </BrowserRouter>, 
   rootElement

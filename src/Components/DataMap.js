@@ -1,13 +1,12 @@
-import React from 'react';
-import App from './App'
-import DropdownFrontPage from './DropdownFrontPage';
+// import React from 'react';
+// import App from './App'
+// import DropdownFrontPage from './DropdownFrontPage';
 
 function DataMap ({ data }) {
 
-    return (
+    console.log (data)
 
-        console.log(data)
-    )
+    return null
 
 }
 

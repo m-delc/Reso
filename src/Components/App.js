@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../App.css';
 import { Link } from "react-router-dom";
 import DropdownFrontPage from './DropdownFrontPage'
-// import DataMap from './DataMap'
+import DataMap from './DataMap'
 // import { v4 } from 'uuid'
 
 
@@ -24,7 +24,7 @@ function App() {
     fetchData();
   }, [])
 
-  console.log(data);
+  // console.log(data);
 
   // template for adding new reservation to db.json
   // const newObj = {
@@ -42,13 +42,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <DropdownFrontPage />
-        {/* <DataMap data={data} /> */}
+        <DataMap data={data} />
           <nav>
             <p>
               <Link to="./Form">Form Test</Link>
             </p>
             <p>
-              <Link to="./ConfirmReservation">Conform Reso (Link Test)</Link>
+              <Link to="./ConfirmReservation">Confirm Reso (Link Test)</Link>
             </p>
           </nav>
       </header>
