@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import { Link } from "react-router-dom";
-// import DropdownFrontPage from './DropdownFrontPage'
 import DataMap from './DataMap'
 import Button from '@material-ui/core/Button';
-import SelectAutoWidth from './SelectAutoWidth'
 
 // import { v4 } from 'uuid'
 
@@ -28,18 +26,7 @@ function App() {
     fetchData();
   }, [])
 
-  console.log(data);
-
-  // template for adding new reservation to db.json
-  // const newObj = {
-  //   "Id": v4(),
-  //   "GuestName":
-  //   "Restaurant":
-  //   "Date":
-  //   "Time":
-  //   "PartySize":
-  // }
-
+  // console.log(data);
 
   return (
     <div className="App">
@@ -53,8 +40,6 @@ function App() {
           CLICK
         </Button>
         <DataMap data={data} />
-        {/* <DropdownFrontPage /> */}
-        {/* <SelectAutoWidth /> */}
           <nav>
             <p>
               <Link to="./Form">Form Test</Link>

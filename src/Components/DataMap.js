@@ -1,6 +1,5 @@
 import React from 'react';
-// import DropdownFrontPage from './DropdownFrontPage';
-import SelectAutoWidth from './SelectAutoWidth';
+import RestaurantList from './RestaurantList';
 
 
 function DataMap ({ data }) {
@@ -11,7 +10,7 @@ function DataMap ({ data }) {
             {
                 data.map(d => ( 
                                 
-                    <SelectAutoWidth key={d.id}
+                    <RestaurantList key={d.id}
                                         restaurant={d.restaurant}
                                         time={d.time} 
                                         />
