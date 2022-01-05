@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../logo.svg';
 import '../App.css';
-import { v4 } from 'uuid'
 import Header from './Header';
 import NavBar from './NavBar';
-import Container from './Container';
-import Form from './Form'
-import { Link } from "react-router-dom";
 import MakeReservation from "./MakeReservation";
 import SearchReservations from "./SearchReservations";
 import About from "./About";
+import {Route, Routes} from 'react-router-dom'
 
 
 function App() {
@@ -28,9 +24,12 @@ function App() {
     <div className="App">
       <Header />
       <NavBar />
-      <MakeReservation reservations={reservations} setReservations={setReservations}/>
-      <SearchReservations reservations={reservations} />
-      <About />
+
+      <Routes>
+        <Route path='/makereservation' element={<MakeReservation reservations={reservations} setReservations={setReservations} />} />
+        <Route path='/searchreservation' element={<SearchReservations reservations={reservations} />} />
+        <Route path='/about' element={ <About />} />
+      </Routes>
     </div>
   );
 }

@@ -7,11 +7,20 @@ function NavBar() {
     return(
       <div className = "nav-bar">
           <h2>Navigate</h2>
-          <div id="navigation">
-          <button>Make A Reservation</button>
-          <button>Search For Existing Reservation</button>
-          <button>About</button>
-          </div>
+          <nav id="navigation">
+
+          <a href="/makereservation">
+          Make A Reservation
+          </a>
+
+          <a href="/searchreservation">
+          Search For Existing Reservation
+          </a>
+
+          <a href="/about">
+          About
+          </a>
+          </nav>
       </div>
     )
 

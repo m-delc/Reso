@@ -20,12 +20,19 @@ code {
   width: 900px;
 }
 
-.nav-bar div#navigation {
+.nav-bar nav#navigation {
   display: flex;
   justify-content: space-evenly;
 }
 
-.nav-bar div#navigation button {
+.nav-bar nav#navigation a {
+  background-color: rgba(136, 8, 8, 0.5);
+  color: white;
+  text-align: center;
+  border-style: ridge;
+}
+
+.nav-bar nav#navigation button {
   padding: 0.5rem 0.5rem;
   background-color: rgba(136, 8, 8, 0.5);
   color: white;

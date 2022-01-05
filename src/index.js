@@ -1,34 +1,27 @@
 import React from 'react';
+import { render } from "react-dom";
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './Components/App';
-import reportWebVitals from './reportWebVitals';
 import MakeReservation from './Components/MakeReservation';
+import SearchReservations from './Components/SearchReservations';
 import About from './Components/About';
-import { render } from "react-dom"
-import { BrowserRouter, 
-  Routes, 
+import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter,
+  Routes,
   Route
 } from "react-router-dom";
 
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
 
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="MakeReservation" element={<MakeReservation />}/>
-      <Route path="About" element={<About />}/>
-
+      <Route path="*" element={<App />} />
     </Routes>
-  </BrowserRouter>, 
+  </BrowserRouter>,
   rootElement
 );
 
