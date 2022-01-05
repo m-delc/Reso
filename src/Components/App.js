@@ -30,6 +30,7 @@ function App() {
         <Route path='/searchreservation' element={<SearchReservations reservations={reservations} />} />
         <Route path='/about' element={ <About />} />
       </Routes>
+      
     </div>
   );
 }
