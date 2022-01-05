@@ -74,11 +74,11 @@
     },
     {
       "id": 10,
-      "name": "",
+      "name": "Tony",
       "restaurant": "Stew You",
       "date": "2022/01/27",
       "time": "6:00",
-      "partysize": 0
+      "partysize": 2
     },
     {
       "id": 11,

@@ -16,7 +16,6 @@ function App() {
       <Header />
       <NavBar />
       <Container />
-     
     </div>
   );
 }

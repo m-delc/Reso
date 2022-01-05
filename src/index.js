@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './Components/App';
-import Form from './Components/Form'
-import ConfirmReservation from './Components/ConfirmReservation'
 import reportWebVitals from './reportWebVitals';
+import MakeReservation from './Components/MakeReservation';
+import About from './Components/About';
 import { render } from "react-dom"
 import { BrowserRouter, 
   Routes, 
@@ -24,8 +24,9 @@ render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="Form" element={<Form />} />
-      <Route path="ConfirmReservation" element={<ConfirmReservation />} />
+      <Route path="MakeReservation" element={<MakeReservation />}/>
+      <Route path="About" element={<About />}/>
+
     </Routes>
   </BrowserRouter>, 
   rootElement
