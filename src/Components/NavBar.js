@@ -1,19 +1,23 @@
 import React from 'react'
 import {Link, useNavigate} from 'react-router-dom'
-import About from './About';
+// import About from './About';
 
 
 function NavBar() {
-    return(
-      <div className = "nav-bar">
-          <h2>Navigate</h2>
-          <div id="navigation">
-          <button>Make A Reservation</button>
-          <button>Search For Existing Reservation</button>
-          <button>About</button>
-          </div>
-      </div>
-    )
+
+  const navigate = useNavigate()
+
+  return(
+    <div className = "nav-bar">
+        <h2>Navigate</h2>
+        <div id="navigation">
+        <button onClick={() => navigate('./')}>Home</button>
+        <button>Make A Reservation</button>
+        <button onClick={() => navigate('./SearchReservations')}>Search For Existing Reservation</button>
+        <button onClick={() => navigate('./About')}>About</button>
+        </div>
+    </div>
+  )
 
 }
 
