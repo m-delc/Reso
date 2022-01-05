@@ -3,6 +3,7 @@ import App from './Components/App';
 import Form from './Components/Form'
 import DataMap from './Components/DataMap'
 import ConfirmReservation from './Components/ConfirmReservation'
+import AddReservation from './Components/AddReservation'
 import { render } from "react-dom"
 import { BrowserRouter, 
   Routes, 
@@ -18,6 +19,7 @@ render(
       <Route path="Form" element={<Form />} />
       <Route path="ConfirmReservation" element={<ConfirmReservation />} />
       <Route path="DataMap" element={<DataMap />} />
+      <Route path="AddReservation" element={<AddReservation />} />
     </Routes>
   </BrowserRouter>, 
   rootElement
