@@ -16,8 +16,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Header />
+        <Body /> 
       </header>
-      <Body /> 
     </div>
   );
 }

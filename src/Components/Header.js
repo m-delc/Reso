@@ -8,15 +8,16 @@ import { Link } from 'react-router-dom'
 const buttons = [
   <Button 
     key="one"
-    component={Link} to="./Form"
-    >One</Button>,
+    component={Link} to="./Form">
+      One
+  </Button>,
   <Button key="two">Two</Button>,
   <Button key="three">Three</Button>,
 ];
 
 export default function Header() {
     return (
-      <div>
+      
 
       <Box
         sx={{
@@ -29,13 +30,13 @@ export default function Header() {
         }}
       >
 
-        <ButtonGroup className="btn-header" color="secondary" aria-label="medium secondary button group">
+        <ButtonGroup  className="nav" color="secondary" aria-label="medium secondary button group">
           {buttons}
         </ButtonGroup>
 
       </Box>
      
 
-      </div>
+      
     );
   }
