@@ -1,29 +1,41 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom'
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import { Link } from 'react-router-dom'
 
-export default function Header () {
 
-    
+const buttons = [
+  <Button 
+    key="one"
+    component={Link} to="./Form"
+    >One</Button>,
+  <Button key="two">Two</Button>,
+  <Button key="three">Three</Button>,
+];
+
+export default function Header() {
     return (
-        (
-            <header>
-              <h1>
-                <span className="logo">"//"</span>
-                <Link to="/">Home Page</Link>
-              </h1>
-              <nav>
-                <NavLink className="button" to="/Form">
-                  Form
-                </NavLink>
-                <NavLink className="button" to="/projects/new">
-                  Add Project
-                </NavLink>
-                {/* <button>Test1</button>
-                <button onClick={() => navigate('./Form')}>test2</button> */}
-              </nav>
-            </header>
-          )
-    )
+      <div>
 
-}
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          '& > *': {
+            m: 1,
+          },
+        }}
+      >
 
+        <ButtonGroup className="btn-header" color="secondary" aria-label="medium secondary button group">
+          {buttons}
+        </ButtonGroup>
+
+      </Box>
+     
+
+      </div>
+    );
+  }
