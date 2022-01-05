@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import Header from "./Header"
 import Body from "./Body"
+import NavBar from "./NavBar"
 // import { Link } from "react-router-dom";
 // import DataMap from './DataMap'
 // import Button from '@material-ui/core/Button';
@@ -16,7 +17,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-        <Header />
+        {/* <Header /> */}
+        <NavBar />
         <Body /> 
       </header>
     </div>
