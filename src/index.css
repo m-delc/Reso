@@ -51,13 +51,6 @@ section {
   align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
-
 /* buttons */
 .button,
 button {
@@ -72,6 +65,10 @@ button {
   border: 2px solid var(--dark-turquoise);
   transition: background-color 0.2s;
   line-height: 1;
+}
+
+.activeLink {
+  color: blue;
 }
 
 .button.active,
@@ -104,19 +101,27 @@ button.blue:hover {
   border: 2px solid var(--blue);
 }
 
-
-
-
-/* layout */
-
-
-section {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* inputs */
+input,
+textarea,
+select {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: none;
+  font: inherit;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: all 0.3s;
+  border: 2px solid var(--color);
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 2px solid var(--primary);
+}
 
 /* links */
 a,
@@ -195,7 +200,39 @@ header nav > * {
   margin: 0 0.5rem;
 }
 
+/* forms */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+}
 
+.form h3 {
+  margin-bottom: 1rem;
+}
+
+.form button[type="submit"] {
+  width: 50%;
+  cursor: pointer;
+}
+
+.form .error {
+  color: var(--fuschia);
+  margin-bottom: 1rem;
+}
+
+/* Filter */
+.phase-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.phase-buttons button {
+  margin: 0 1rem;
+}
 
 /* cards */
 .cards {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom'
 
 export default function Header () {
 
@@ -8,15 +9,15 @@ export default function Header () {
             <header>
               <h1>
                 <span className="logo">"//"</span>
-                screw off
+                <Link to="/">Home Page</Link>
               </h1>
               <nav>
-                <a className="button" href="/Form">
+                <NavLink className="button" to="/Form">
                   Form
-                </a>
-                <a className="button" href="/projects/new">
+                </NavLink>
+                <NavLink className="button" to="/projects/new">
                   Add Project
-                </a>
+                </NavLink>
                 {/* <button>Test1</button>
                 <button onClick={() => navigate('./Form')}>test2</button> */}
               </nav>
