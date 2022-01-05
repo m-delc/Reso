@@ -7,26 +7,32 @@ import NavBar from './NavBar';
 import Container from './Container';
 import Form from './Form'
 import { Link } from "react-router-dom";
+import MakeReservation from "./MakeReservation";
+import SearchReservations from "./SearchReservations";
+import About from "./About";
 
 
 function App() {
+
+  const [reservations, setReservations] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:3000/Resos')
+        .then((response) => response.json())
+        .then((reservationData) => {
+            setReservations(reservationData)
+        })
+    }, [])
 
   return (
     <div className="App">
       <Header />
       <NavBar />
-      <Container />
+      <MakeReservation reservations={reservations} setReservations={setReservations}/>
+      <SearchReservations reservations={reservations} />
+      <About />
     </div>
   );
 }
 
 export default App;
-
-{/* <header className="App-header">
-        <nav>
-          <Link to="./Form">Form Test</Link>
-          <p>
-          <Link to="./ConfirmReservation">Conform Reso (Link Test)</Link>
-          </p>
-        </nav>
-      </header> */}

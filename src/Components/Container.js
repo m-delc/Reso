@@ -1,30 +1,30 @@
-import React, {useState, useEffect} from "react";
-import MakeReservation from "./MakeReservation";
-import SearchReservations from "./SearchReservations";
-import About from "./About";
+// import React, {useState, useEffect} from "react";
+// import MakeReservation from "./MakeReservation";
+// import SearchReservations from "./SearchReservations";
+// import About from "./About";
 
-function Container() {
+// function Container() {
 
-    const [reservations, setReservations] = useState([])
+//     const [reservations, setReservations] = useState([])
 
-    useEffect(() => {
-        fetch('http://localhost:3000/Resos')
-        .then((response) => response.json())
-        .then((reservationData) => {
-            setReservations(reservationData)
-        })
-    }, [])
+//     useEffect(() => {
+//         fetch('http://localhost:3000/Resos')
+//         .then((response) => response.json())
+//         .then((reservationData) => {
+//             setReservations(reservationData)
+//         })
+//     }, [])
 
-    return(
-        <main>
+//     return(
+//         <main>
 
-            <MakeReservation reservations={reservations} setReservations={setReservations}/>
-            <SearchReservations reservations={reservations} />
-            <About />
+//             <MakeReservation reservations={reservations} setReservations={setReservations}/>
+//             <SearchReservations reservations={reservations} />
+//             <About />
             
 
-        </main>
-    )
-}
+//         </main>
+//     )
+// }
 
-export default Container
+// export default Container
