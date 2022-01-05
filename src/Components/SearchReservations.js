@@ -3,39 +3,41 @@ import SearchReservationCard from "./SearchReservationCard";
 
 function SearchReservations({reservations}) {
 
-    const [search, setSearch] = useState("")
+  return null
 
-    function handleChange(event) {
-        setSearch(event.target.value)
-    }
+    // const [search, setSearch] = useState("")
 
-    const matchingReservations = reservations.filter((reservation) => {
-        if(search.length == 0) {
-          return false
-        }
-        else {return reservation.name.toLowerCase().includes(search.toLowerCase())}
-      })
+    // function handleChange(event) {
+    //     setSearch(event.target.value)
+    // }
 
-    return(
-    <div>
-    <form>
-        <label>
-            Search For Reservation By Name:
-                <input 
-                type="text" 
-                name="name"
-                value={search} 
-                onChange={handleChange}
-                />
-        </label>
-    </form>
-    <ul className="cards">
-      {matchingReservations.map((reservation) => (
-        <SearchReservationCard key={reservation.id} reservation={reservation}/>
-      ))}
-    </ul>
-    </div>
-    )
+    // const matchingReservations = reservations.filter((reservation) => {
+    //     if(search.length == 0) {
+    //       return false
+    //     }
+    //     else {return reservation.name.toLowerCase().includes(search.toLowerCase())}
+    //   })
+
+    // return(
+    // <div>
+    // <form>
+    //     <label>
+    //         Search For Reservation By Name:
+    //             <input 
+    //             type="text" 
+    //             name="name"
+    //             value={search} 
+    //             onChange={handleChange}
+    //             />
+    //     </label>
+    // </form>
+    // <ul className="cards">
+    //   {matchingReservations.map((reservation) => (
+    //     <SearchReservationCard key={reservation.id} reservation={reservation}/>
+    //   ))}
+    // </ul>
+    // </div>
+    // )
 }
 
 export default SearchReservations
