@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import '../App.css';
 import { Link } from "react-router-dom";
 import DataMap from './DataMap'
-import Button from '@material-ui/core/Button';
+import GroupSizesColors from './GroupSizesColors'
+// import Button from '@material-ui/core/Button';
+// import Box from '@mui/material/Box';
+// import ButtonGroup from '@mui/material/ButtonGroup';
+
 import Header from "./Header"
 
 // import { v4 } from 'uuid'
@@ -27,20 +31,21 @@ function App() {
     fetchData();
   }, [])
 
-  // console.log(data);
+
 
   return (
     <div className="App">
+        <GroupSizesColors />
       <header className="App-header">
         <Header />
 
-        <Button 
+        {/* <Button 
           component={Link} to="./Form"
           variant="contained"
           color="secondary"
           >
           CLICK
-        </Button>
+        </Button> */}
         <DataMap data={data} />
           <nav>
             <p>

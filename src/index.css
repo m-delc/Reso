@@ -194,10 +194,12 @@ header h1 a:hover {
   font-size: 1.25em;
   font-family: Helvetica;
   margin-right: 0.5rem;
+
 }
 
 header nav > * {
   margin: 0 0.5rem;
+  
 }
 
 /* forms */
