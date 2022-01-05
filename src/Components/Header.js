@@ -5,6 +5,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import { Link } from 'react-router-dom'
 
 
+
 const buttons = [
   <Button 
     key="one"
@@ -33,7 +34,6 @@ export default function Header() {
         <ButtonGroup  className="nav" color="secondary" aria-label="medium secondary button group">
           {buttons}
         </ButtonGroup>
-
       </Box>
      
 
