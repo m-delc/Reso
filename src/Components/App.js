@@ -26,7 +26,8 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path='/makereservation' element={<MakeReservation reservations={reservations} setReservations={setReservations} />} />
+        <Route path='/makereservation' element={<MakeReservation reservations={reservations} 
+                                                                setReservations={setReservations} />} />
         <Route path='/searchreservation' element={<SearchReservations reservations={reservations} />} />
         <Route path='/about' element={ <About />} />
       </Routes>

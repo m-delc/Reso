@@ -7,6 +7,10 @@ function NavBar() {
           <h2>Navigate</h2>
           <nav id="navigation">
 
+          <a href="/">
+          Home
+          </a>
+
           <a href="/makereservation">
           Make A Reservation
           </a>
