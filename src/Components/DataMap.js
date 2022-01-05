@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom"
 
 function DataMap ({ data }) {
 
-        const navigate = useNavigate()
+    const navigate = useNavigate()
 
     return (
         <div>

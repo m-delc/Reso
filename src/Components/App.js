@@ -3,6 +3,7 @@ import '../App.css';
 import { Link } from "react-router-dom";
 import DataMap from './DataMap'
 import Button from '@material-ui/core/Button';
+import Header from "./Header"
 
 // import { v4 } from 'uuid'
 
@@ -31,6 +32,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Header />
 
         <Button 
           component={Link} to="./Form"
