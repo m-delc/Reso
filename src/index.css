@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(108, 87, 87);
 }
 
 code {
@@ -16,7 +17,7 @@ code {
   padding-top: 0.1rem;
   padding-bottom: 1rem ;
   margin: auto;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(0, 255, 217, 0.5);
   width: 900px;
 }
 
@@ -26,7 +27,7 @@ code {
 }
 
 .nav-bar nav#navigation a {
-  background-color: rgba(136, 8, 8, 0.5);
+  background-color: rgba(8, 136, 102, 0.5);
   color: white;
   text-align: center;
   border-style: ridge;
@@ -34,7 +35,7 @@ code {
 
 .nav-bar nav#navigation button {
   padding: 0.5rem 0.5rem;
-  background-color: rgba(136, 8, 8, 0.5);
+  background-color: rgba(8, 136, 27, 0.5);
   color: white;
   height: 50px;
 }
@@ -63,10 +64,10 @@ code {
 }
 
 
-  .cards {
-    display: flex;
-    justify-content: space-evenly;
-  }
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 
 

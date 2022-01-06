@@ -66,11 +66,11 @@
     },
     {
       "id": 9,
-      "name": "",
+      "name": "michael",
       "restaurant": "La Cucina",
       "date": "2022/01/27",
       "time": "8:00",
-      "partysize": 0
+      "partysize": 3
     },
     {
       "id": 10,

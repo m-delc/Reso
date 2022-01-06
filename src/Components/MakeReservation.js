@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Filter from "./Filter";
 import MakeReservationCard from "./MakeReservationCard";
+import Alert2 from "./Alert2";
 
 function MakeReservation({reservations, setReservations}) {
 
@@ -35,7 +36,7 @@ function handleChange(event) {
 
 function handleButtonClick(id, restaurant, date, time) {
     if(newReservation.name === "" || newReservation.partysize === 0) {
-        alert("Please Enter a Valid Name or Party Size")
+        <Link to={<Alert2 />}>
     }
     else{
         fetch(`http://localhost:3000/Resos/${id}` , {
@@ -102,7 +103,7 @@ return(
         <MakeReservationCard key={reservation.id} reservation={reservation} handleButtonClick={handleButtonClick} />
       ))}
     </ul>
-    
+
 
     </div>
 

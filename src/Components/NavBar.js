@@ -1,8 +1,11 @@
 import React from 'react'
+import '../App.css'
 
 
 function NavBar() {
     return(
+      <div className = "nav-bar2">
+
       <div className = "nav-bar">
           <h2>Navigate</h2>
           <nav id="navigation">
@@ -24,6 +27,7 @@ function NavBar() {
           </a>
 
           </nav>
+      </div>
       </div>
     )
 
