@@ -4,7 +4,7 @@ import React from 'react'
 function NavBar() {
     return(
       <div className = "nav-bar">
-          <h2>Navigate</h2>
+          <h2></h2>
           <nav id="navigation">
 
           <a href="/makereservation">

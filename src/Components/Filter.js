@@ -2,7 +2,7 @@ import React from "react";
 
 function Filter({selectedRestaurant, handleFilter}) {
     return(
-    <div className="Filter">
+    <div className="filter">
       <select 
       name="filter" 
       value={selectedRestaurant}
@@ -13,6 +13,8 @@ function Filter({selectedRestaurant, handleFilter}) {
         <option value="Grits All Day">Grits All Day</option>
         <option value="La Cucina">La Cucina</option>
         <option value="Stew You">Stew You</option>
+        <option value="Fried 'N' Tied">Fried 'N' Tied</option>
+        <option value="Brine">Brine</option>
       </select>
     </div>
     )
