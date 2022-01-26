@@ -2,11 +2,11 @@
   "Resos": [
     {
       "id": 1,
-      "name": "",
+      "name": "Mahdy",
       "restaurant": "The Stake",
       "date": "2022/01/27",
       "time": "6:00 PM",
-      "partysize": 0,
+      "partysize": 1,
       "address": "13 Bohemia Ave New York, NY 10003",
       "number": "917-410-6686"
     },
